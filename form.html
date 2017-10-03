@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form | Know_Your _Course</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <!--jQuery library--> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!--Latest compiled and minified JavaScript--> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+        	.top_margin{
+        		margin-top: 20px;
+        	}
+        </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row top_margin">
+			<div class="col-xs-6 col-xs-offset-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading"><h3>Student Feedback Form</h3></div>
+					<div class="panel-body">
+						<form method="POST" action="feedback_collection_script.php">
+							<div class="form-group">
+								<label for="first_name">First Name : </label>
+								<input type="first_name" class="form-control" id="first_name" name="first_name">
+							</div>
+							<div class="form-group">
+								<label for="last_name">Last Name : </label>
+								<input type="last_name" class="form-control" id="last_name" name="last_name">	
+							</div>
+							<div class="form-group">
+								<label for="id">ID : </label>
+								<input type="id" class="form-control" id="id" name="id">	
+							</div>
+							<div class="form-group">
+								<label for="branch">Branch : </label>
+								<input type="branch" class="form-control" id="branch" name="branch">	
+							</div>
+							<div class="form-group">
+								<label for="course_name">Course Name : </label>
+								<input list="course_names" class="form-control" type="course_names" name="course_names">
+									<datalist id="course_names">
+										<option value="Probability & Statistics"></option>
+										<option value="Economics"></option>
+										<option value="Object Oriented Programming"></option>
+										<option value="Algorithm & Problem Solving"></option>
+										<option value="Information Technology & Knowledge Society"></option>
+									</datalist>
+								</input>	
+							</div>
+							<div class="form-group">
+								<label for="course_code">Course Code</label>
+								<input type="course_code" class="form-control" id="course_code" name="course_code">
+							</div>
+							Consider the following statements and fill the appropriate circle :<br><br>
+							<h3>A. COURSE CONTENT</h3>
+							(a) The teacher covers the entire syllabus.
+							<br>
+							<input type="radio" name="grade1" value="1" checked> 1<br> 
+							<input type="radio" name="grade2" value="2"> 2<br>
+							<input type="radio" name="grade3" value="3"> 3<br>
+							<input type="radio" name="grade4" value="4"> 4<br>
+							<input type="radio" name="grade5" value="5"> 5<br>
+							(b) The teacher discusses topics in detail
+							<br>
+							<input type="radio" name="grade1" value="1" checked> 1<br> 
+							<input type="radio" name="grade2" value="2"> 2<br>
+							<input type="radio" name="grade3" value="3"> 3<br>
+							<input type="radio" name="grade4" value="4"> 4<br>
+							<input type="radio" name="grade5" value="5"> 5<br>
+							(c) The teacher possesses dep knowledge of the subject taught
+							<br>
+							<input type="radio" name="grade1" value="1" checked> 1<br> 
+							<input type="radio" name="grade2" value="2"> 2<br>
+							<input type="radio" name="grade3" value="3"> 3<br>
+							<input type="radio" name="grade4" value="4"> 4<br>
+							<input type="radio" name="grade5" value="5"> 5<br>
+							(d) The teacher communicates clearly
+							<br>
+							<input type="radio" name="grade1" value="1" checked> 1<br> 
+							<input type="radio" name="grade2" value="2"> 2<br>
+							<input type="radio" name="grade3" value="3"> 3<br>
+							<input type="radio" name="grade4" value="4"> 4<br>
+							<input type="radio" name="grade5" value="5"> 5<br>
+							(e) The teacher inspires me by his/her knowledge in the subject
+							<br>
+							<input type="radio" name="grade1" value="1" checked> 1<br> 
+							<input type="radio" name="grade2" value="2"> 2<br>
+							<input type="radio" name="grade3" value="3"> 3<br>
+							<input type="radio" name="grade4" value="4"> 4<br>
+							<input type="radio" name="grade5" value="5"> 5
+							<br><br><br>
+							<h3>B. TEACHING- LEARNING PROCESS</h3>
+							(f) The teacher is punctual to the class
+							<br>
+							<input type="radio" name="grade1" value="1" checked> 1<br> 
+							<input type="radio" name="grade2" value="2"> 2<br>
+							<input type="radio" name="grade3" value="3"> 3<br>
+							<input type="radio" name="grade4" value="4"> 4<br>
+							<input type="radio" name="grade5" value="5"> 5<br>
+							(g) The teacher engages the class for the full duration and completes the course in time
+							<br>
+							<input type="radio" name="grade1" value="1" checked> 1<br> 
+							<input type="radio" name="grade2" value="2"> 2<br>
+							<input type="radio" name="grade3" value="3"> 3<br>
+							<input type="radio" name="grade4" value="4"> 4<br>
+							<input type="radio" name="grade5" value="5"> 5<br>
+							(h) the teacher comes fully prepared for the class
+							<br>
+							<input type="radio" name="grade1" value="1" checked> 1<br> 
+							<input type="radio" name="grade2" value="2"> 2<br>
+							<input type="radio" name="grade3" value="3"> 3<br>
+							<input type="radio" name="grade4" value="4"> 4<br>
+							<input type="radio" name="grade5" value="5"> 5<br>
+							(i) The teacher provides guidance counselling in academic and non-academic matters in/out side the class
+							<br>
+							<input type="radio" name="grade1" value="1" checked> 1<br> 
+							<input type="radio" name="grade2" value="2"> 2<br>
+							<input type="radio" name="grade3" value="3"> 3<br>
+							<input type="radio" name="grade4" value="4"> 4<br>
+							<input type="radio" name="grade5" value="5"> 5<br><br>
+							<center>
+								<button type="submit" class="btn btn-primary" value="feedback_submit">SUBMIT</button>
+							</center>	
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
