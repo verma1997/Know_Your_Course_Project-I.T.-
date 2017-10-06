@@ -20,7 +20,7 @@ $Q7 = $_POST['grade7'];
 $Q8 = $_POST['grade8'];
 $Q9 = $_POST['grade9'];
 
-$query = "INSERT INTO record (id,first name,last name,branch,course name,course code,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9) VALUES ('".$id."','".$first_name."','".$last_name."','".$branch."','".$course_name."','".$course_code."','".$Q1."','".$Q2."','".$Q3."','".$Q4."','".$Q5."','".$Q6."','".$Q7."','".$Q8."','".$Q9."')";
+$query = "INSERT INTO record (id,firstname,lastname,branch,coursename,coursecode,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9) VALUES ('".$id."','".$first_name."','".$last_name."','".$branch."','".$course_name."','".$course_code."','".$Q1."','".$Q2."','".$Q3."','".$Q4."','".$Q5."','".$Q6."','".$Q7."','".$Q8."','".$Q9."')";
 if(!mysqli_query($con,$query))
 {
     echo 'Not Inserted';
